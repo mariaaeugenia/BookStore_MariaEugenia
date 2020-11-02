@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		544913C02550AF6E00413AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544913BF2550AF6E00413AA2 /* AppDelegate.swift */; };
-		544913C42550AF6E00413AA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544913C32550AF6E00413AA2 /* ViewController.swift */; };
 		544913C92550AF6E00413AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544913C82550AF6E00413AA2 /* Assets.xcassets */; };
 		544913CC2550AF6E00413AA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544913CA2550AF6E00413AA2 /* LaunchScreen.storyboard */; };
 		544913D72550AF6E00413AA2 /* BookStore_MariaEugeniaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544913D62550AF6E00413AA2 /* BookStore_MariaEugeniaTests.swift */; };
@@ -23,6 +22,17 @@
 		544914432550B78F00413AA2 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544914422550B78F00413AA2 /* ParameterEncoding.swift */; };
 		5449144B2550B79D00413AA2 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449144A2550B79D00413AA2 /* URLParameterEncoder.swift */; };
 		544914502550B80100413AA2 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449144F2550B80100413AA2 /* NetworkLogger.swift */; };
+		544914562550BB9500413AA2 /* ViewControllerConfigurating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544914552550BB9500413AA2 /* ViewControllerConfigurating.swift */; };
+		5449145E2550BC9200413AA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449145D2550BC9200413AA2 /* ViewController.swift */; };
+		544914632550BCAB00413AA2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544914622550BCAB00413AA2 /* CollectionViewCell.swift */; };
+		544914692550BEF700413AA2 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544914682550BEF700413AA2 /* BookCell.swift */; };
+		544914702550BF2100413AA2 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449146F2550BF2100413AA2 /* UIImageViewExtensions.swift */; };
+		5449147E2550BF6D00413AA2 /* BookListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544914782550BF6D00413AA2 /* BookListPresenter.swift */; };
+		5449147F2550BF6D00413AA2 /* BookListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544914792550BF6D00413AA2 /* BookListWorker.swift */; };
+		544914802550BF6D00413AA2 /* BookListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449147A2550BF6D00413AA2 /* BookListRouter.swift */; };
+		544914812550BF6D00413AA2 /* BookListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449147B2550BF6D00413AA2 /* BookListModels.swift */; };
+		544914822550BF6D00413AA2 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449147C2550BF6D00413AA2 /* BookListViewController.swift */; };
+		544914832550BF6D00413AA2 /* BookListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449147D2550BF6D00413AA2 /* BookListInteractor.swift */; };
 		570A24A297426352F2AEFAB7 /* Pods_BookStore_MariaEugenia_BookStore_MariaEugeniaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5195E9206F03F87A4D635452 /* Pods_BookStore_MariaEugenia_BookStore_MariaEugeniaUITests.framework */; };
 		60FCE49D4A091AD492DE7D57 /* Pods_BookStore_MariaEugeniaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6BA85E67956C094CBF0362 /* Pods_BookStore_MariaEugeniaTests.framework */; };
 		E1D54AA7A6BF816D50D74877 /* Pods_BookStore_MariaEugenia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FC6415689640A6F92D991F /* Pods_BookStore_MariaEugenia.framework */; };
@@ -54,7 +64,6 @@
 		5195E9206F03F87A4D635452 /* Pods_BookStore_MariaEugenia_BookStore_MariaEugeniaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookStore_MariaEugenia_BookStore_MariaEugeniaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		544913BC2550AF6E00413AA2 /* BookStore_MariaEugenia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookStore_MariaEugenia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544913BF2550AF6E00413AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		544913C32550AF6E00413AA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		544913C82550AF6E00413AA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		544913CB2550AF6E00413AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		544913CD2550AF6E00413AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +83,17 @@
 		544914422550B78F00413AA2 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		5449144A2550B79D00413AA2 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 		5449144F2550B80100413AA2 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		544914552550BB9500413AA2 /* ViewControllerConfigurating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConfigurating.swift; sourceTree = "<group>"; };
+		5449145D2550BC9200413AA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		544914622550BCAB00413AA2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		544914682550BEF700413AA2 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		5449146F2550BF2100413AA2 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		544914782550BF6D00413AA2 /* BookListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListPresenter.swift; sourceTree = "<group>"; };
+		544914792550BF6D00413AA2 /* BookListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListWorker.swift; sourceTree = "<group>"; };
+		5449147A2550BF6D00413AA2 /* BookListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListRouter.swift; sourceTree = "<group>"; };
+		5449147B2550BF6D00413AA2 /* BookListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListModels.swift; sourceTree = "<group>"; };
+		5449147C2550BF6D00413AA2 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
+		5449147D2550BF6D00413AA2 /* BookListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListInteractor.swift; sourceTree = "<group>"; };
 		F0B2C77078CDE42386F2F83A /* Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests.release.xcconfig"; path = "Target Support Files/Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests/Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F965DD1F4BFC8DB64E1D75AE /* Pods-BookStore_MariaEugenia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore_MariaEugenia.debug.xcconfig"; path = "Target Support Files/Pods-BookStore_MariaEugenia/Pods-BookStore_MariaEugenia.debug.xcconfig"; sourceTree = "<group>"; };
 		FA6BA85E67956C094CBF0362 /* Pods_BookStore_MariaEugeniaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookStore_MariaEugeniaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,9 +153,12 @@
 			isa = PBXGroup;
 			children = (
 				544914162550B5A100413AA2 /* Resources */,
+				544914542550BB8000413AA2 /* AbstractClasses */,
+				5449146D2550BF0A00413AA2 /* Extensions */,
+				544914672550BEE200413AA2 /* View */,
 				544913FE2550B45300413AA2 /* Network */,
+				544914772550BF5100413AA2 /* Scenes */,
 				544913BF2550AF6E00413AA2 /* AppDelegate.swift */,
-				544913C32550AF6E00413AA2 /* ViewController.swift */,
 				544913C82550AF6E00413AA2 /* Assets.xcassets */,
 				544913CA2550AF6E00413AA2 /* LaunchScreen.storyboard */,
 				544913CD2550AF6E00413AA2 /* Info.plist */,
@@ -199,6 +222,45 @@
 				5449144A2550B79D00413AA2 /* URLParameterEncoder.swift */,
 			);
 			path = Encoding;
+			sourceTree = "<group>";
+		};
+		544914542550BB8000413AA2 /* AbstractClasses */ = {
+			isa = PBXGroup;
+			children = (
+				544914552550BB9500413AA2 /* ViewControllerConfigurating.swift */,
+				5449145D2550BC9200413AA2 /* ViewController.swift */,
+				544914622550BCAB00413AA2 /* CollectionViewCell.swift */,
+			);
+			path = AbstractClasses;
+			sourceTree = "<group>";
+		};
+		544914672550BEE200413AA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				544914682550BEF700413AA2 /* BookCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5449146D2550BF0A00413AA2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5449146F2550BF2100413AA2 /* UIImageViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		544914772550BF5100413AA2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5449147B2550BF6D00413AA2 /* BookListModels.swift */,
+				544914792550BF6D00413AA2 /* BookListWorker.swift */,
+				5449147A2550BF6D00413AA2 /* BookListRouter.swift */,
+				5449147D2550BF6D00413AA2 /* BookListInteractor.swift */,
+				544914782550BF6D00413AA2 /* BookListPresenter.swift */,
+				5449147C2550BF6D00413AA2 /* BookListViewController.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		7806C4FB74EB934166022883 /* Pods */ = {
@@ -464,14 +526,24 @@
 				544914502550B80100413AA2 /* NetworkLogger.swift in Sources */,
 				544914182550B5BD00413AA2 /* Constants.swift in Sources */,
 				5449144B2550B79D00413AA2 /* URLParameterEncoder.swift in Sources */,
+				544914832550BF6D00413AA2 /* BookListInteractor.swift in Sources */,
+				544914802550BF6D00413AA2 /* BookListRouter.swift in Sources */,
 				544914332550B71E00413AA2 /* DataDecoding.swift in Sources */,
+				544914692550BEF700413AA2 /* BookCell.swift in Sources */,
+				5449145E2550BC9200413AA2 /* ViewController.swift in Sources */,
+				544914632550BCAB00413AA2 /* CollectionViewCell.swift in Sources */,
 				544914432550B78F00413AA2 /* ParameterEncoding.swift in Sources */,
 				544914382550B73100413AA2 /* JSONDataDecoder.swift in Sources */,
-				544913C42550AF6E00413AA2 /* ViewController.swift in Sources */,
 				544914002550B46500413AA2 /* Endpoint.swift in Sources */,
 				544914122550B51300413AA2 /* APIService.swift in Sources */,
+				544914562550BB9500413AA2 /* ViewControllerConfigurating.swift in Sources */,
+				5449147E2550BF6D00413AA2 /* BookListPresenter.swift in Sources */,
+				544914812550BF6D00413AA2 /* BookListModels.swift in Sources */,
 				5449143D2550B74200413AA2 /* NetworkError.swift in Sources */,
+				544914822550BF6D00413AA2 /* BookListViewController.swift in Sources */,
+				5449147F2550BF6D00413AA2 /* BookListWorker.swift in Sources */,
 				544913C02550AF6E00413AA2 /* AppDelegate.swift in Sources */,
+				544914702550BF2100413AA2 /* UIImageViewExtensions.swift in Sources */,
 				5449142D2550B70700413AA2 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
