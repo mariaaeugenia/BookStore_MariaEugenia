@@ -1,0 +1,34 @@
+PODS:
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
+  - SDWebImage (5.9.4):
+    - SDWebImage/Core (= 5.9.4)
+  - SDWebImage/Core (5.9.4)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - PromiseKit
+  - SDWebImage
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - PromiseKit
+    - SDWebImage
+    - SnapKit
+
+SPEC CHECKSUMS:
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 6197b565dd4e6f581766dd30eceabde7c771b9e4
+
+COCOAPODS: 1.9.3

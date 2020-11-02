@@ -1,0 +1,6 @@
+framework module Pods_BookStore_MariaEugenia {
+  umbrella header "Pods-BookStore_MariaEugenia-umbrella.h"
+
+  export *
+  module * { export * }
+}

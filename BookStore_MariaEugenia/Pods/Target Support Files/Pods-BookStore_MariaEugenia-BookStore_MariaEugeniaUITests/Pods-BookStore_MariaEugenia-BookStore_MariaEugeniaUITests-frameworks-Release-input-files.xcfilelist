@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests/Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
