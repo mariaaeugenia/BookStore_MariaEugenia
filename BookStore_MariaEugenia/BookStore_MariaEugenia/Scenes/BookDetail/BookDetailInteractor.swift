@@ -16,6 +16,7 @@ protocol BookDetailBusinessLogic {
 
 protocol BookDetailDataStore {
     var item: Item? { get set }
+    var book: BookDetail.Request? { get set }
 }
 
 class BookDetailInteractor: BookDetailBusinessLogic, BookDetailDataStore {
@@ -24,6 +25,7 @@ class BookDetailInteractor: BookDetailBusinessLogic, BookDetailDataStore {
     let worker: BookDetailNetworkLogic
     
     var item: Item?
+    var book: BookDetail.Request?
     
     init(with worker: BookDetailNetworkLogic = BookDetailWorker()) {
         self.worker = worker
@@ -31,9 +33,14 @@ class BookDetailInteractor: BookDetailBusinessLogic, BookDetailDataStore {
     
     // MARK: Business logic
     func loadData() {
-        let authorsStr = item?.volumeInfo?.authors?.joined(separator: ",\n")
-        let vm = BookDetail.ViewModel(title: item?.volumeInfo?.title, author: authorsStr, description: item?.volumeInfo?.description, link: item?.saleInfo?.buyLink)
-        presenter?.presentBookDetail(vm: vm)
+        if item != nil {
+            let authorsStr = item?.volumeInfo?.authors?.joined(separator: ",\n")
+            let vm = BookDetail.ViewModel(title: item?.volumeInfo?.title, author: authorsStr, description: item?.volumeInfo?.description, link: item?.saleInfo?.buyLink, isFavorite: false)
+            presenter?.presentBookDetail(vm: vm)
+        } else {
+            let vm = BookDetail.ViewModel(title: book?.title, author: book?.authors, description: book?.description, link: book?.link, isFavorite: true)
+            presenter?.presentBookDetail(vm: vm)
+        }
     }
     
     func saveToFavorite() {

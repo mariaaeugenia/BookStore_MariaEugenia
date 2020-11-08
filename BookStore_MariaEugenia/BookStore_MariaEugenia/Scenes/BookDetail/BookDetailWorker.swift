@@ -18,9 +18,11 @@ protocol BookDetailNetworkLogic {
 
 class BookDetailWorker: BookDetailNetworkLogic {
     
+    let appDelegate = UIApplication.shared.delegate
+    
     func makeFavorite(_ book: BookDetail.Request) throws -> Bool {
         
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { throw NetworkError.custom("Couldn't access database") }
+        guard let appDelegate = appDelegate as? AppDelegate else { throw NetworkError.custom("Couldn't access database") }
         let managedContext = appDelegate.persistentContainer.viewContext
         guard let itemEntity = NSEntityDescription.entity(forEntityName: "Book", in: managedContext) else { throw NetworkError.custom("Couldn't access Entity") }
         let item = NSManagedObject(entity: itemEntity, insertInto: managedContext)
@@ -40,7 +42,7 @@ class BookDetailWorker: BookDetailNetworkLogic {
     
     func removeFavorite(with id: String) throws -> Bool {
         
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { throw NetworkError.custom("Couldn't access database") }
+        guard let appDelegate = appDelegate as? AppDelegate else { throw NetworkError.custom("Couldn't access database") }
         let managedContext = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Book")
         fetchRequest.predicate = NSPredicate(format: "id = %@", id)

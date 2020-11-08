@@ -30,5 +30,6 @@ class BookListRouter: NSObject, BookListRoutingLogic, BookListDataParsing {
     
     private func passDataToDetails(source: BookListDataStore, destination: inout BookDetailDataStore) {
         destination.item = source.item
+        destination.book = source.book
     }
 }

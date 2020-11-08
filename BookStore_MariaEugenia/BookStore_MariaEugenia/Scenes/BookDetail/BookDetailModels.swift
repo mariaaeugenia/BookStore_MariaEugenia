@@ -33,5 +33,6 @@ enum BookDetail {
         let author: String?
         let description: String?
         let link: String?
+        let isFavorite: Bool
     }
 }

@@ -20,6 +20,7 @@ class BookDetailViewController: ViewController {
     private var authorLabel: UILabel!
     private var descriptionTextView: UITextView!
     private var linkTextView: UITextView!
+    private var favoriteButton: UIBarButtonItem!
     
     var interactor: BookDetailBusinessLogic?
     var router: (NSObjectProtocol & BookDetailDataPassing)?
@@ -37,6 +38,7 @@ class BookDetailViewController: ViewController {
         authorLabel = .init()
         descriptionTextView = .init()
         linkTextView = .init()
+        favoriteButton = UIBarButtonItem(image: UIImage(systemName: "heart"), style: .plain, target: self, action: #selector(favoriteButtonTapped(_ :)))
     }
     
     override func addViewHierarchy() {
@@ -69,7 +71,6 @@ class BookDetailViewController: ViewController {
     
     override func configureViews() {
         view.backgroundColor = .white
-        let favoriteButton = UIBarButtonItem(image: UIImage(systemName: "heart"), style: .plain, target: self, action: #selector(favoriteButtonTapped(_ :)))
         navigationItem.rightBarButtonItem = favoriteButton
         configureStackView()
         configureLabelsAndTextView()
@@ -135,6 +136,7 @@ extension BookDetailViewController: BookDetailDisplayLogic {
         authorLabel.text = viewModel.author
         descriptionTextView.text = viewModel.description
         linkTextView.text = viewModel.link
+        favoriteButton.image = viewModel.isFavorite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
     }
 
     func displayAlert(title: String, message: String) {

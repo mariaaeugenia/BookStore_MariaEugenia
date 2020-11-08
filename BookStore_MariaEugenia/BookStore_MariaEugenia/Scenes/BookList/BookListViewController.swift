@@ -88,7 +88,13 @@ class BookListViewController: ViewController {
     //MARK: -
     //MARK: - BUTTON ACTION
     @objc private func filterButtonTapped(_ sender: UIBarButtonItem) {
-        
+        if sender.image == UIImage(systemName: "line.horizontal.3.decrease.circle") {
+            interactor?.isFavoriteBooks = true
+            sender.image = UIImage(systemName: "book.circle")
+        } else {
+            interactor?.isFavoriteBooks = false
+            sender.image = UIImage(systemName: "line.horizontal.3.decrease.circle")
+        }
     }
     
 }
