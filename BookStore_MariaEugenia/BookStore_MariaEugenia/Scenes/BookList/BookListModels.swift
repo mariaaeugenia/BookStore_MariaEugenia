@@ -25,10 +25,17 @@ enum BookList {
 struct Item: Decodable {
     let id: String?
     let volumeInfo: VolumeInfo?
+    let saleInfo: SaleInfo?
+}
+
+struct SaleInfo: Codable {
+    let buyLink: String?
 }
 
 // MARK: - Decodable
 struct VolumeInfo: Decodable {
+    let title, description: String?
+    let authors: [String]?
     let imageLinks: ImageLinks?
 }
 

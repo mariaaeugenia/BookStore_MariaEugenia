@@ -15,7 +15,7 @@ protocol BookListDisplayLogic: class {
     func displayError(title: String, message: String)
     func shouldDisplayLoading()
     func shouldHideLoading()
-    func displayImageDetail()
+    func displayBookDetail()
 }
 
 class BookListViewController: ViewController {
@@ -31,7 +31,7 @@ class BookListViewController: ViewController {
     private var collectionLayout: UICollectionViewFlowLayout!
     
     var interactor: BookListBusinessLogic?
-    var router: BookListRoutingLogic?
+    var router: (NSObjectProtocol & BookListRoutingLogic & BookListDataParsing)?
     
     //MARK: -
     //MARK: - CONFIGURE VIEW
@@ -71,6 +71,7 @@ class BookListViewController: ViewController {
         interactor.presenter = presenter
         presenter.viewController = viewController
         router.viewController = viewController
+        router.dataStore = interactor
     }
     
     //MARK: -
@@ -112,8 +113,8 @@ extension BookListViewController: BookListDisplayLogic {
         SVProgressHUD.dismiss()
     }
     
-    func displayImageDetail() {
-        router?.routeToImageDetail()
+    func displayBookDetail() {
+        router?.routeToBookDetail()
     }
 }
 

@@ -35,6 +35,13 @@
 		544914832550BF6D00413AA2 /* BookListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449147D2550BF6D00413AA2 /* BookListInteractor.swift */; };
 		54AB6C37255787CE00132C73 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C36255787CE00132C73 /* UIViewControllerExtensions.swift */; };
 		54AB6C4625578B1700132C73 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C4525578B1700132C73 /* UICollectionViewExtensions.swift */; };
+		54AB6C5525578FD500132C73 /* BookDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C4F25578FD500132C73 /* BookDetailPresenter.swift */; };
+		54AB6C5625578FD500132C73 /* BookDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C5025578FD500132C73 /* BookDetailWorker.swift */; };
+		54AB6C5725578FD500132C73 /* BookDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C5125578FD500132C73 /* BookDetailRouter.swift */; };
+		54AB6C5825578FD500132C73 /* BookDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C5225578FD500132C73 /* BookDetailModels.swift */; };
+		54AB6C5925578FD500132C73 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C5325578FD500132C73 /* BookDetailViewController.swift */; };
+		54AB6C5A25578FD500132C73 /* BookDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C5425578FD500132C73 /* BookDetailInteractor.swift */; };
+		54AB6C5F255799BF00132C73 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C5E255799BF00132C73 /* UIStackViewExtensions.swift */; };
 		570A24A297426352F2AEFAB7 /* Pods_BookStore_MariaEugenia_BookStore_MariaEugeniaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5195E9206F03F87A4D635452 /* Pods_BookStore_MariaEugenia_BookStore_MariaEugeniaUITests.framework */; };
 		60FCE49D4A091AD492DE7D57 /* Pods_BookStore_MariaEugeniaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6BA85E67956C094CBF0362 /* Pods_BookStore_MariaEugeniaTests.framework */; };
 		E1D54AA7A6BF816D50D74877 /* Pods_BookStore_MariaEugenia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FC6415689640A6F92D991F /* Pods_BookStore_MariaEugenia.framework */; };
@@ -98,6 +105,13 @@
 		5449147D2550BF6D00413AA2 /* BookListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListInteractor.swift; sourceTree = "<group>"; };
 		54AB6C36255787CE00132C73 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		54AB6C4525578B1700132C73 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
+		54AB6C4F25578FD500132C73 /* BookDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailPresenter.swift; sourceTree = "<group>"; };
+		54AB6C5025578FD500132C73 /* BookDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailWorker.swift; sourceTree = "<group>"; };
+		54AB6C5125578FD500132C73 /* BookDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailRouter.swift; sourceTree = "<group>"; };
+		54AB6C5225578FD500132C73 /* BookDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailModels.swift; sourceTree = "<group>"; };
+		54AB6C5325578FD500132C73 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		54AB6C5425578FD500132C73 /* BookDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailInteractor.swift; sourceTree = "<group>"; };
+		54AB6C5E255799BF00132C73 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
 		F0B2C77078CDE42386F2F83A /* Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests.release.xcconfig"; path = "Target Support Files/Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests/Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F965DD1F4BFC8DB64E1D75AE /* Pods-BookStore_MariaEugenia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore_MariaEugenia.debug.xcconfig"; path = "Target Support Files/Pods-BookStore_MariaEugenia/Pods-BookStore_MariaEugenia.debug.xcconfig"; sourceTree = "<group>"; };
 		FA6BA85E67956C094CBF0362 /* Pods_BookStore_MariaEugeniaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookStore_MariaEugeniaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -252,11 +266,21 @@
 				5449146F2550BF2100413AA2 /* UIImageViewExtensions.swift */,
 				54AB6C36255787CE00132C73 /* UIViewControllerExtensions.swift */,
 				54AB6C4525578B1700132C73 /* UICollectionViewExtensions.swift */,
+				54AB6C5E255799BF00132C73 /* UIStackViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
 		544914772550BF5100413AA2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				54AB6C4A25578FA800132C73 /* BookList */,
+				54AB6C4E25578FB200132C73 /* BookDetail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		54AB6C4A25578FA800132C73 /* BookList */ = {
 			isa = PBXGroup;
 			children = (
 				5449147B2550BF6D00413AA2 /* BookListModels.swift */,
@@ -266,7 +290,20 @@
 				544914782550BF6D00413AA2 /* BookListPresenter.swift */,
 				5449147C2550BF6D00413AA2 /* BookListViewController.swift */,
 			);
-			path = Scenes;
+			path = BookList;
+			sourceTree = "<group>";
+		};
+		54AB6C4E25578FB200132C73 /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				54AB6C5225578FD500132C73 /* BookDetailModels.swift */,
+				54AB6C5025578FD500132C73 /* BookDetailWorker.swift */,
+				54AB6C5125578FD500132C73 /* BookDetailRouter.swift */,
+				54AB6C5425578FD500132C73 /* BookDetailInteractor.swift */,
+				54AB6C4F25578FD500132C73 /* BookDetailPresenter.swift */,
+				54AB6C5325578FD500132C73 /* BookDetailViewController.swift */,
+			);
+			path = BookDetail;
 			sourceTree = "<group>";
 		};
 		7806C4FB74EB934166022883 /* Pods */ = {
@@ -532,9 +569,12 @@
 				544914502550B80100413AA2 /* NetworkLogger.swift in Sources */,
 				544914182550B5BD00413AA2 /* Constants.swift in Sources */,
 				5449144B2550B79D00413AA2 /* URLParameterEncoder.swift in Sources */,
+				54AB6C5925578FD500132C73 /* BookDetailViewController.swift in Sources */,
 				544914832550BF6D00413AA2 /* BookListInteractor.swift in Sources */,
 				544914802550BF6D00413AA2 /* BookListRouter.swift in Sources */,
+				54AB6C5625578FD500132C73 /* BookDetailWorker.swift in Sources */,
 				544914332550B71E00413AA2 /* DataDecoding.swift in Sources */,
+				54AB6C5F255799BF00132C73 /* UIStackViewExtensions.swift in Sources */,
 				544914692550BEF700413AA2 /* BookCell.swift in Sources */,
 				5449145E2550BC9200413AA2 /* ViewController.swift in Sources */,
 				544914632550BCAB00413AA2 /* CollectionViewCell.swift in Sources */,
@@ -547,7 +587,11 @@
 				544914812550BF6D00413AA2 /* BookListModels.swift in Sources */,
 				54AB6C4625578B1700132C73 /* UICollectionViewExtensions.swift in Sources */,
 				5449143D2550B74200413AA2 /* NetworkError.swift in Sources */,
+				54AB6C5825578FD500132C73 /* BookDetailModels.swift in Sources */,
 				544914822550BF6D00413AA2 /* BookListViewController.swift in Sources */,
+				54AB6C5A25578FD500132C73 /* BookDetailInteractor.swift in Sources */,
+				54AB6C5725578FD500132C73 /* BookDetailRouter.swift in Sources */,
+				54AB6C5525578FD500132C73 /* BookDetailPresenter.swift in Sources */,
 				5449147F2550BF6D00413AA2 /* BookListWorker.swift in Sources */,
 				54AB6C37255787CE00132C73 /* UIViewControllerExtensions.swift in Sources */,
 				544913C02550AF6E00413AA2 /* AppDelegate.swift in Sources */,

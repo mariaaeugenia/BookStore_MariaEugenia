@@ -37,6 +37,6 @@ class BookListPresenter: BookListPresentationLogic {
     }
     
     func presentImageDetail() {
-        viewController?.displayImageDetail()
+        viewController?.displayBookDetail()
     }
 }
