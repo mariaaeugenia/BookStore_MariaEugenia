@@ -9,16 +9,34 @@
 import UIKit
 
 protocol BookListPresentationLogic {
-    func presentSomething(response: BookList.Something.Response)
+    func reloadData()
+    func onError(title: String, message: String)
+    func shouldPresentLoading()
+    func shouldRemoveLoading()
+    func presentImageDetail()
 }
 
 class BookListPresenter: BookListPresentationLogic {
     weak var viewController: BookListDisplayLogic?
     
     // MARK: Presentation logic
+    func reloadData() {
+        viewController?.reloadData()
+    }
     
-    func presentSomething(response: BookList.Something.Response) {
-        let viewModel = BookList.Something.ViewModel()
-        viewController?.displaySomething(viewModel: viewModel)
+    func onError(title: String, message: String) {
+        viewController?.displayError(title: title, message: message)
+    }
+    
+    func shouldPresentLoading() {
+        viewController?.shouldDisplayLoading()
+    }
+    
+    func shouldRemoveLoading() {
+        viewController?.shouldHideLoading()
+    }
+    
+    func presentImageDetail() {
+        viewController?.displayImageDetail()
     }
 }

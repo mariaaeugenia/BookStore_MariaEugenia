@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import PromiseKit
 
-class BookListWorker {
-  func doSomeWork() {
-  }
+protocol BookListNetworkLogic {
+    func getBooks(for query: String, at page: Int) -> Promise<BookList.Response>
+}
+
+class BookListWorker: BookListNetworkLogic {
+    let network = NetworkProvider.shared
+    func getBooks(for query: String, at page: Int) -> Promise<BookList.Response> {
+        network.request(.getBooks(query: query, maxResult: 20, startIndex: page))
+    }
 }

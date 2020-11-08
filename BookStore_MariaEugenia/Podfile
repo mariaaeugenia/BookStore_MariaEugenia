@@ -8,6 +8,7 @@ target 'BookStore_MariaEugenia' do
   pod "PromiseKit"
   pod 'SnapKit'
   pod 'SDWebImage'
+  pod 'SVProgressHUD'
 
   target 'BookStore_MariaEugeniaTests' do
     inherit! :search_paths

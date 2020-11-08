@@ -9,26 +9,27 @@
 import UIKit
 
 protocol BookListRoutingLogic {
-    //func routeToSomewhere(segue: UIStoryboardSegue?)
+    func routeToImageDetail()
+}
+
+protocol BookListDataParsing {
+    var dataStore: BookListDataStore? { get }
 }
 
 class BookListRouter: NSObject, BookListRoutingLogic {
     weak var viewController: BookListViewController?
+    var dataStore: BookListDataStore?
     
     // MARK: Routing
+    func routeToImageDetail() {
+//        let vc = ImageDetailViewController()
+//        guard let dataStore = dataStore, let destinationRouter = vc.router, var destinationDataSource = destinationRouter.dataStore else { return }
+//        passDataToDetails(source: dataStore, destination: &destinationDataSource)
+//        vc.modalPresentationStyle = .fullScreen
+//        viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
     
-    //func routeToSomewhere(segue: UIStoryboardSegue?)
-    //{
-    //  if let segue = segue {
-    //    let destinationVC = segue.destination as! SomewhereViewController
-    //    var destinationDS = destinationVC.router!.dataStore!
-    //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-    //  } else {
-    //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-    //    var destinationDS = destinationVC.router!.dataStore!
-    //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-    //    navigateToSomewhere(source: viewController!, destination: destinationVC)
-    //  }
-    //}
+//    private func passDataToDetails(source: BookListDataStore, destination: inout ImageDetailDataStore) {
+//        destination.id = source.id
+//    }
 }

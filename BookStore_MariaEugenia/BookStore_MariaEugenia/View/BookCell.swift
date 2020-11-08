@@ -29,5 +29,8 @@ class BookCell: CollectionViewCell {
         imageView.contentMode = .scaleAspectFit
     }
     
+    func set(vm: BookList.ViewModel) {
+        imageView.setImage(url: vm.url, with: UIImage(named: "placeholder"), nil)
+    }
 }
 

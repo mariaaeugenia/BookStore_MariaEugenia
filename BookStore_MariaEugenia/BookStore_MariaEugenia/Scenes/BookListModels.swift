@@ -11,12 +11,29 @@ import UIKit
 enum BookList {
     // MARK: Use cases
     
-    enum Something {
-        struct Request {
-        }
-        struct Response {
-        }
-        struct ViewModel {
-        }
+    struct Response: Decodable {
+        let kind: String?
+        let totalItems: Int?
+        let items: [Item]?
+    }
+    struct ViewModel {
+        var url: String?
     }
 }
+
+// MARK: - Item
+struct Item: Decodable {
+    let id: String?
+    let volumeInfo: VolumeInfo?
+}
+
+// MARK: - Decodable
+struct VolumeInfo: Decodable {
+    let imageLinks: ImageLinks?
+}
+
+// MARK: - Decodable
+struct ImageLinks: Decodable {
+    let thumbnail: String?
+}
+

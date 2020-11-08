@@ -33,6 +33,8 @@
 		544914812550BF6D00413AA2 /* BookListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449147B2550BF6D00413AA2 /* BookListModels.swift */; };
 		544914822550BF6D00413AA2 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449147C2550BF6D00413AA2 /* BookListViewController.swift */; };
 		544914832550BF6D00413AA2 /* BookListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449147D2550BF6D00413AA2 /* BookListInteractor.swift */; };
+		54AB6C37255787CE00132C73 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C36255787CE00132C73 /* UIViewControllerExtensions.swift */; };
+		54AB6C4625578B1700132C73 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C4525578B1700132C73 /* UICollectionViewExtensions.swift */; };
 		570A24A297426352F2AEFAB7 /* Pods_BookStore_MariaEugenia_BookStore_MariaEugeniaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5195E9206F03F87A4D635452 /* Pods_BookStore_MariaEugenia_BookStore_MariaEugeniaUITests.framework */; };
 		60FCE49D4A091AD492DE7D57 /* Pods_BookStore_MariaEugeniaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6BA85E67956C094CBF0362 /* Pods_BookStore_MariaEugeniaTests.framework */; };
 		E1D54AA7A6BF816D50D74877 /* Pods_BookStore_MariaEugenia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FC6415689640A6F92D991F /* Pods_BookStore_MariaEugenia.framework */; };
@@ -94,6 +96,8 @@
 		5449147B2550BF6D00413AA2 /* BookListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListModels.swift; sourceTree = "<group>"; };
 		5449147C2550BF6D00413AA2 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
 		5449147D2550BF6D00413AA2 /* BookListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListInteractor.swift; sourceTree = "<group>"; };
+		54AB6C36255787CE00132C73 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		54AB6C4525578B1700132C73 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
 		F0B2C77078CDE42386F2F83A /* Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests.release.xcconfig"; path = "Target Support Files/Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests/Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F965DD1F4BFC8DB64E1D75AE /* Pods-BookStore_MariaEugenia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore_MariaEugenia.debug.xcconfig"; path = "Target Support Files/Pods-BookStore_MariaEugenia/Pods-BookStore_MariaEugenia.debug.xcconfig"; sourceTree = "<group>"; };
 		FA6BA85E67956C094CBF0362 /* Pods_BookStore_MariaEugeniaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookStore_MariaEugeniaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,6 +250,8 @@
 			isa = PBXGroup;
 			children = (
 				5449146F2550BF2100413AA2 /* UIImageViewExtensions.swift */,
+				54AB6C36255787CE00132C73 /* UIViewControllerExtensions.swift */,
+				54AB6C4525578B1700132C73 /* UICollectionViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -539,9 +545,11 @@
 				544914562550BB9500413AA2 /* ViewControllerConfigurating.swift in Sources */,
 				5449147E2550BF6D00413AA2 /* BookListPresenter.swift in Sources */,
 				544914812550BF6D00413AA2 /* BookListModels.swift in Sources */,
+				54AB6C4625578B1700132C73 /* UICollectionViewExtensions.swift in Sources */,
 				5449143D2550B74200413AA2 /* NetworkError.swift in Sources */,
 				544914822550BF6D00413AA2 /* BookListViewController.swift in Sources */,
 				5449147F2550BF6D00413AA2 /* BookListWorker.swift in Sources */,
+				54AB6C37255787CE00132C73 /* UIViewControllerExtensions.swift in Sources */,
 				544913C02550AF6E00413AA2 /* AppDelegate.swift in Sources */,
 				544914702550BF2100413AA2 /* UIImageViewExtensions.swift in Sources */,
 				5449142D2550B70700413AA2 /* NetworkProvider.swift in Sources */,
