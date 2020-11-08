@@ -42,6 +42,7 @@
 		54AB6C5925578FD500132C73 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C5325578FD500132C73 /* BookDetailViewController.swift */; };
 		54AB6C5A25578FD500132C73 /* BookDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C5425578FD500132C73 /* BookDetailInteractor.swift */; };
 		54AB6C5F255799BF00132C73 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB6C5E255799BF00132C73 /* UIStackViewExtensions.swift */; };
+		54BC014325586EAF00A453D4 /* BookStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54BC014125586EAF00A453D4 /* BookStore.xcdatamodeld */; };
 		570A24A297426352F2AEFAB7 /* Pods_BookStore_MariaEugenia_BookStore_MariaEugeniaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5195E9206F03F87A4D635452 /* Pods_BookStore_MariaEugenia_BookStore_MariaEugeniaUITests.framework */; };
 		60FCE49D4A091AD492DE7D57 /* Pods_BookStore_MariaEugeniaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6BA85E67956C094CBF0362 /* Pods_BookStore_MariaEugeniaTests.framework */; };
 		E1D54AA7A6BF816D50D74877 /* Pods_BookStore_MariaEugenia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FC6415689640A6F92D991F /* Pods_BookStore_MariaEugenia.framework */; };
@@ -112,6 +113,7 @@
 		54AB6C5325578FD500132C73 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 		54AB6C5425578FD500132C73 /* BookDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailInteractor.swift; sourceTree = "<group>"; };
 		54AB6C5E255799BF00132C73 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
+		54BC014225586EAF00A453D4 /* BookStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookStore.xcdatamodel; sourceTree = "<group>"; };
 		F0B2C77078CDE42386F2F83A /* Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests.release.xcconfig"; path = "Target Support Files/Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests/Pods-BookStore_MariaEugenia-BookStore_MariaEugeniaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F965DD1F4BFC8DB64E1D75AE /* Pods-BookStore_MariaEugenia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore_MariaEugenia.debug.xcconfig"; path = "Target Support Files/Pods-BookStore_MariaEugenia/Pods-BookStore_MariaEugenia.debug.xcconfig"; sourceTree = "<group>"; };
 		FA6BA85E67956C094CBF0362 /* Pods_BookStore_MariaEugeniaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookStore_MariaEugeniaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				544914172550B5BD00413AA2 /* Constants.swift */,
+				54BC014125586EAF00A453D4 /* BookStore.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				54AB6C5925578FD500132C73 /* BookDetailViewController.swift in Sources */,
 				544914832550BF6D00413AA2 /* BookListInteractor.swift in Sources */,
 				544914802550BF6D00413AA2 /* BookListRouter.swift in Sources */,
+				54BC014325586EAF00A453D4 /* BookStore.xcdatamodeld in Sources */,
 				54AB6C5625578FD500132C73 /* BookDetailWorker.swift in Sources */,
 				544914332550B71E00413AA2 /* DataDecoding.swift in Sources */,
 				54AB6C5F255799BF00132C73 /* UIStackViewExtensions.swift in Sources */,
@@ -921,6 +925,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54BC014125586EAF00A453D4 /* BookStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54BC014225586EAF00A453D4 /* BookStore.xcdatamodel */,
+			);
+			currentVersion = 54BC014225586EAF00A453D4 /* BookStore.xcdatamodel */;
+			path = BookStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 544913B42550AF6D00413AA2 /* Project object */;
 }

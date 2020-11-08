@@ -22,18 +22,12 @@ protocol BookListBusinessLogic {
 }
 
 protocol BookListDataStore {
-    var title: String? { get }
-    var authors: [String]? { get }
-    var description: String? { get }
-    var link: String? { get }
+    var item: Item? { get }
 }
 
 class BookListInteractor: BookListBusinessLogic, BookListDataStore {
    
-    var title: String?
-    var authors: [String]?
-    var description: String?
-    var link: String?
+    var item: Item?
     
     var presenter: BookListPresentationLogic?
     let worker: BookListNetworkLogic
@@ -87,10 +81,7 @@ class BookListInteractor: BookListBusinessLogic, BookListDataStore {
     
     func didSelect(at index: Int) {
         let item = books[index]
-        title = item.volumeInfo?.title
-        authors = item.volumeInfo?.authors
-        description = item.volumeInfo?.description
-        link = item.saleInfo?.buyLink
+        self.item = item
         presenter?.presentImageDetail()
     }
     

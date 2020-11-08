@@ -10,6 +10,7 @@ import UIKit
 
 protocol BookDetailDisplayLogic: class {
     func displayBookDetail(viewModel: BookDetail.ViewModel)
+    func displayAlert(title: String, message: String)
 }
 
 class BookDetailViewController: ViewController {
@@ -68,6 +69,8 @@ class BookDetailViewController: ViewController {
     
     override func configureViews() {
         view.backgroundColor = .white
+        let favoriteButton = UIBarButtonItem(image: UIImage(systemName: "heart"), style: .plain, target: self, action: #selector(favoriteButtonTapped(_ :)))
+        navigationItem.rightBarButtonItem = favoriteButton
         configureStackView()
         configureLabelsAndTextView()
         configureScene()
@@ -112,6 +115,18 @@ class BookDetailViewController: ViewController {
         linkTextView.dataDetectorTypes = .link
         linkTextView.isEditable = false
     }
+    
+    //MARK: -
+    //MARK: - BUTTON ACTION
+    @objc private func favoriteButtonTapped(_ sender: UIBarButtonItem) {
+        if sender.image == UIImage(systemName: "heart") {
+            sender.image = UIImage(systemName: "heart.fill")
+            interactor?.saveToFavorite()
+        } else {
+            sender.image = UIImage(systemName: "heart")
+            interactor?.removeFromFavorite()
+        }
+    }
 }
 
 extension BookDetailViewController: BookDetailDisplayLogic {
@@ -122,4 +137,7 @@ extension BookDetailViewController: BookDetailDisplayLogic {
         linkTextView.text = viewModel.link
     }
 
+    func displayAlert(title: String, message: String) {
+        presentAlert(with: title, and: message)
+    }
 }

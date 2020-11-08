@@ -10,6 +10,7 @@ import UIKit
 
 protocol BookDetailPresentationLogic {
     func presentBookDetail(vm: BookDetail.ViewModel)
+    func onAlert(title: String, message: String)
 }
 
 class BookDetailPresenter: BookDetailPresentationLogic {
@@ -19,5 +20,9 @@ class BookDetailPresenter: BookDetailPresentationLogic {
     
     func presentBookDetail(vm: BookDetail.ViewModel) {
         viewController?.displayBookDetail(viewModel: vm)
+    }
+    
+    func onAlert(title: String, message: String) {
+        viewController?.displayAlert(title: title, message: message)
     }
 }

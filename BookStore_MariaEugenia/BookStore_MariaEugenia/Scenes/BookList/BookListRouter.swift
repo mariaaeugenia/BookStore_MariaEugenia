@@ -29,9 +29,6 @@ class BookListRouter: NSObject, BookListRoutingLogic, BookListDataParsing {
     }
     
     private func passDataToDetails(source: BookListDataStore, destination: inout BookDetailDataStore) {
-        destination.title = source.title
-        destination.authors = source.authors
-        destination.description = source.description
-        destination.link = source.link
+        destination.item = source.item
     }
 }

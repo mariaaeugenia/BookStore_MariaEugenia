@@ -10,29 +10,54 @@ import UIKit
 
 protocol BookDetailBusinessLogic {
     func loadData()
+    func saveToFavorite()
+    func removeFromFavorite()
 }
 
 protocol BookDetailDataStore {
-    var title: String? { get set }
-    var authors: [String]? { get set }
-    var description: String? { get set }
-    var link: String? { get set }
+    var item: Item? { get set }
 }
 
 class BookDetailInteractor: BookDetailBusinessLogic, BookDetailDataStore {
     
     var presenter: BookDetailPresentationLogic?
-    var title: String?
-    var authors: [String]?
-    var description: String?
-    var link: String?
+    let worker: BookDetailNetworkLogic
     
-    init() {}
+    var item: Item?
+    
+    init(with worker: BookDetailNetworkLogic = BookDetailWorker()) {
+        self.worker = worker
+    }
     
     // MARK: Business logic
     func loadData() {
-        let authorsStr = authors?.joined(separator: ",\n")
-        let vm = BookDetail.ViewModel(title: title, author: authorsStr, description: description, link: link)
+        let authorsStr = item?.volumeInfo?.authors?.joined(separator: ",\n")
+        let vm = BookDetail.ViewModel(title: item?.volumeInfo?.title, author: authorsStr, description: item?.volumeInfo?.description, link: item?.saleInfo?.buyLink)
         presenter?.presentBookDetail(vm: vm)
+    }
+    
+    func saveToFavorite() {
+        let authorsStr = item?.volumeInfo?.authors?.joined(separator: ",\n")
+        let request = BookDetail.Request(id: item?.id, title: item?.volumeInfo?.title, authors: authorsStr, description: item?.volumeInfo?.description, link: item?.saleInfo?.buyLink, thumbnail: item?.volumeInfo?.imageLinks?.thumbnail)
+        do {
+            let success = try worker.makeFavorite(request)
+            if success {
+                presenter?.onAlert(title: "Alert", message: "Successfully marked as favorite")
+            }
+        } catch { 
+            presenter?.onAlert(title: "Error", message: error.localizedDescription)
+        }
+    }
+    
+    func removeFromFavorite() {
+        guard let id = item?.id else { return }
+        do {
+            let success = try worker.removeFavorite(with: id)
+            if success {
+                presenter?.onAlert(title: "Alert", message: "Successfully removed from favorites")
+            }
+        } catch {
+            presenter?.onAlert(title: "Error", message: error.localizedDescription)
+        }
     }
 }
